@@ -69,7 +69,7 @@ rippled sign s██████████████████████
 
 <!-- MULTICODE_BLOCK_END -->
 
-To sign a transaction, you must provide a secret key that can [authorize the transaction](transaction-basics.html#authorizing-transactions). Typically you provide seed value that the server derives the secret key from. You can do this in a few ways:
+To sign a transaction, you must provide a secret key that can [authorize the transaction](transaction-basics.html#authorizing-transactions). Typically you provide a seed value that the server derives the secret key from. You can do this in a few ways:
 
 * Provide the seed in the `secret` field and omit the `key_type` field. This value can be formatted as an XRP Ledger [base58][] seed, RFC-1751, hexadecimal, or as a string passphrase. (secp256k1 keys only)
 * Provide a `key_type` value and exactly one of `seed`, `seed_hex`, or `passphrase`. Omit the `secret` field. (Not supported by the commandline syntax.)
